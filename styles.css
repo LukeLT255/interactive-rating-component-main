@@ -1,0 +1,176 @@
+
+
+/* variables */
+:root {
+    --main-bg-color: #131518;
+    --card-bg-color: #262E38;
+    --submit-btn-color: #FC7614;
+    --circle-bg-color: #262E38;
+    --mobile-start-bg-color: #262E38;
+    --mobile-start-card-bg-color: linear-gradient(#232A34, #181E27); 
+}
+
+/* reset */
+li, h1, button, body, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* fonts */
+* {
+    font-family: "Overpass";
+}
+
+p { 
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+
+}
+
+li{
+    font-size: 14px;
+}
+
+/* base styles */
+:root{
+    height: 100%;
+}
+
+body{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    color: white;
+}
+
+p, li {
+    color: #969FAD;
+}
+
+
+
+
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    height: 50%;
+}
+
+button {
+    background-color: var(--submit-btn-color);
+    color: white;
+    height: 45px;
+    border-width: 0px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--submit-btn-color);
+    cursor: pointer;
+}
+
+
+
+
+/* mobile */
+
+body {
+    background-color: var(--mobile-start-bg-color);
+    /* background-image: var(--mobile-start-card-bg-color); */
+}
+
+
+#icon-div, li {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--circle-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover {
+    background-color: #969FAD;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.start-state-card {
+    background-image: var(--mobile-start-card-bg-color);
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    width: 270px;
+    margin: 0px auto;
+
+    /* display: none; */
+}
+
+.submit-state-card {
+    background-color: var(--circle-bg-color);
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    width: 270px;
+    margin: 0px auto;
+}
+
+.select {
+    background-color: #29333e;
+    color:#FC7614;
+    border-radius: 50px;
+    padding: 6px 13px;
+}
+
+.hide {
+    display: none;
+    position: absolute;
+}
+
+.selected {
+    background-color: #FC7614;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    
+}
